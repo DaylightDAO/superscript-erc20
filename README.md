@@ -3,7 +3,7 @@
 **Token Name**\
 TBD by Superscripters
 
-**Token Symbol** - `between 3-10 charecters`\
+**Token Symbol** - `between 3-10 characters`\
 TBD by Superscripters
 
 **Token decimals**\
