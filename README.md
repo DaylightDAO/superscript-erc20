@@ -48,5 +48,5 @@ Yes
 **To Deploy**
 ```bash
 npx hardhat run scripts/deploy.ts --network ropsten
-npx hardhat verify --network mainnet DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
+npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
 ```
