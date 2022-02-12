@@ -11,7 +11,7 @@ contract TBD is ERC20, ERC20Burnable, AccessControl {
     constructor() ERC20("TBD", "TBD") {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(MINTER_ROLE, msg.sender);
-        _mint(msg.sender, 100000);
+        _mint(msg.sender, 100000 * 10 ** decimals());
     }
 
     function mint(address to, uint256 amount) public onlyRole(MINTER_ROLE) {
