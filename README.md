@@ -44,3 +44,9 @@ Yes
 
 **ERC1363**\
 Yes
+
+**To Deploy**
+```bash
+npx hardhat run scripts/deploy.ts --network ropsten
+npx hardhat verify --network mainnet DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
+```
