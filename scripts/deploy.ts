@@ -14,7 +14,7 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Contract = await ethers.getContractFactory("SDLT");
+  const Contract = await ethers.getContractFactory("Scripto");
   const contract = await Contract.deploy();
 
   await contract.deployed();
