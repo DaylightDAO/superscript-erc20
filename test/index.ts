@@ -4,7 +4,7 @@ import { BigNumber } from "ethers";
 
 describe("Contract", function() {
   it("Should give the sender the total supply of tokens", async function() {
-    const Contract = await ethers.getContractFactory("SDLT");
+    const Contract = await ethers.getContractFactory("Scripto");
     const contract = await Contract.deploy()
     await contract.deployed()
     const [owner] = await ethers.getSigners();
