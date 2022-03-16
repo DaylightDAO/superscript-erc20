@@ -13,10 +13,10 @@
                       |__/                                                            |__/
 
 **Token Name**\
-TBD by Superscripters
+Scripto by Superscripters
 
 **Token Symbol** - `between 3-10 characters`\
-TBD by Superscripters
+SDLT by Superscripters
 
 **Token decimals**\
 18
