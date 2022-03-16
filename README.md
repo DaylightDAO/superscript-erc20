@@ -13,10 +13,10 @@
                       |__/                                                            |__/
 
 **Token Name**\
-TBD by Superscripters
+Scripto by Superscripters
 
 **Token Symbol** - `between 3-10 characters`\
-TBD by Superscripters
+SDLT by Superscripters
 
 **Token decimals**\
 18
@@ -44,3 +44,9 @@ Yes
 
 **ERC1363**\
 Yes
+
+**To Deploy**
+```bash
+npx hardhat run scripts/deploy.ts --network ropsten
+npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
+```
