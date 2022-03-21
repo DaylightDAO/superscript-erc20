@@ -7,7 +7,7 @@ import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol"
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
-contract Scripto is ERC20Upgradeable, ERC20BurnableUpgradeable, AccessControlUpgradeable, OwnableUpgradeable {
+contract Scripto is Initializable, ERC20Upgradeable, ERC20BurnableUpgradeable, AccessControlUpgradeable, OwnableUpgradeable {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
     function initialize() public initializer {

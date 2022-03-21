@@ -19,6 +19,7 @@ async function main() {
   await contract.deployed();
 
   console.log("Contract deployed to:", contract.address);
+  console.log("Implementation Address deployed to: ", await upgrades.erc1967.getImplementationAddress(contract.address));
 }
 
 // We recommend this pattern to be able to use async/await everywhere
