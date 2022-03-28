@@ -1,11 +1,11 @@
 import { expect } from "chai";
-import { ethers } from "hardhat";
+const { ethers, upgrades } = require('hardhat');
 import { BigNumber } from "ethers";
 
 describe("Contract", function() {
   it("Should give the sender the total supply of tokens", async function() {
     const Contract = await ethers.getContractFactory("Scripto");
-    const contract = await Contract.deploy()
+    const contract = await upgrades.deployProxy(Contract);
     await contract.deployed()
     const [owner] = await ethers.getSigners();
     const totalSupply = (await (await contract.connect(owner)).totalSupply())
