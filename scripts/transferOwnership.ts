@@ -1,5 +1,5 @@
-async function main () {
-    const gnosisSafe = 'GNOSIS-SAFE-ADDRESS';
+async function transfer () {
+    const gnosisSafe = '0x437A3Ad497297f8e7cC27D162653d0BAe37A3C1E';
 
     console.log('Transferring ownership of ProxyAdmin...');
     // The owner of the ProxyAdmin can upgrade our contracts
@@ -7,7 +7,7 @@ async function main () {
     console.log('Transferred ownership of ProxyAdmin to:', gnosisSafe);
 }
 
-main()
+transfer()
     .then(() => process.exit(0))
     .catch(error => {
         console.error(error);
