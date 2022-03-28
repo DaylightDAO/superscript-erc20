@@ -28,13 +28,10 @@ SDLT by Superscripters
 Capped
 
 **Access Type** - `None, Ownable, Role Based`\
-Role Based
+Ownable
 
 **Transfer Type** - `Unstoppable, Pausable`\
 Unstoppable
-
-**Verified Source Code**\
-What do we need to do to verify this on blockscanners?
 
 **Burnable**\
 Yes
@@ -47,6 +44,6 @@ Yes
 
 **To Deploy**
 ```bash
-npx hardhat run scripts/deploy.ts --network ropsten
-npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
+npx hardhat run scripts/deploy.ts
+npx hardhat verify DEPLOYED_CONTRACT_ADDRESS
 ```
