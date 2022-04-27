@@ -1,6 +1,16 @@
 {
   "manifestVersion": "3.2",
-  "proxies": [],
+  "admin": {
+    "address": "0x7C85Ae05c0c643E860A6431CF394E63a9caf0F87",
+    "txHash": "0xfec59d135ca773dde3d5e349678e11b9f6da0ab210a04c8adc76e9bb440159a5"
+  },
+  "proxies": [
+    {
+      "address": "0xC2a238a39Fa64f9e51036A69950F1910561fbA2E",
+      "txHash": "0x7e06ba6d75808db4c7350ed6dc66c97649477d8e5af8e764f9085b7c88885a8d",
+      "kind": "transparent"
+    }
+  ],
   "impls": {
     "4a3c75189f75ba894e95ab336176cabaaa7fe10f7ae06d73aa5335e1bda02cd4": {
       "address": "0x67E6f4BD0E95eC549E55b8880Fab2fa451531345",
